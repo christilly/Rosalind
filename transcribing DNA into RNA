@@ -1,0 +1,18 @@
+#An RNA string is a string formed from the alphabet containing 'A', 'C', 'G', and 'U'.
+
+#Given a DNA string t corresponding to a coding strand, 
+#its transcribed RNA string u is formed by replacing all occurrences of 'T' in t with 'U' in u.
+
+#Given: A DNA string t having length at most 1000 nt.
+
+#Return: The transcribed RNA string of t.
+
+
+dna = input("Enter DNA string:")
+lDna = dna[:] #converts string dna into a list
+
+for i in lDna: #interates over lDna list
+    if i == "T":
+        rna = lDna.replace("T", "U")
+
+print("RNA:", rna)
